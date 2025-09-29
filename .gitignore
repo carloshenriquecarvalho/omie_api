@@ -6,7 +6,7 @@ __pycache__/
 # Virtualenvs
 .venv/
 venv/
-.env/
+.env
 
 # Editor/IDE
 .vscode/
