@@ -1,5 +1,12 @@
-.env
-__pycache__
-.venv
+# Byte-compiled / cache
 __pycache__/
-*pyc
+**/__pycache__/
+*.py[cod]
+
+# Virtualenvs
+.venv/
+venv/
+.env/
+
+# Editor/IDE
+.vscode/
