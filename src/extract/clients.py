@@ -1,7 +1,7 @@
 from .api_client import call_omie_api
 
 def fetch_all_clients():
-    """Fetches all pages of clients with the 'Cliente' tag."""
+    # faz um fetch com os clientes que tem a tag cliente
     print("Extraindo Clientes...")
     page = 1
     all_clients = []
@@ -17,7 +17,7 @@ def fetch_all_clients():
         
         clients = data.get('clientes_cadastro', [])
         
-        # Filter clients that have the 'Cliente' tag
+        # filtra clientes com a tag cliente
         filtered_clients = [
             client for client in clients
             if any(tag.get("tag") == "Cliente" for tag in client.get("tags", []))

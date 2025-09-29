@@ -3,10 +3,6 @@
 import gspread
 
 def load_to_sheets(df, sheet_name, worksheet_name="Página1"):
-    """
-    Carrega um DataFrame para uma aba no Google Sheets
-    mantendo o cabeçalho (linha 1).
-    """
     # 1. Autenticar
     gc = gspread.service_account()
 
