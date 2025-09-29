@@ -2,7 +2,7 @@ from dotenv import load_dotenv
 import os
 
 # Carrega as variáveis de ambiente
-load_dotenv(dotenv_path='src/dotenv_files/.env')
+load_dotenv(dotenv_path='src/.env')
 
 # Declara as variáveis de ambiente em constantes
 BASE_URL = os.getenv("BASE_URL")
